@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Music Player with Playlist</title>
+        <link rel="stylesheet" href="./music.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="player">
+            <div class="cover">
+                <img src="./image/music-player.png" alt="Album Cover" />
+            </div>
+            <div class="song-title">Song Title</div>
+            <div class="artist">Artist Name</div>
+
+            <input
+                id="progress-bar"
+                class="progress-bar"
+                type="range"
+                value="0"
+                step="1"
+                min="0"
+                max="100"
+            />
+
+            <audio id="audio" src=""></audio>
+
+            <div class="controls">
+                <div class="btn repeat"><i class="fa-solid fa-repeat"></i></div>
+                <div class="btn"><i class="fa-solid fa-backward"></i></div>
+                <div class="btn main">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i id="play-btn" class="fa-solid fa-play"></i>
+                </div>
+                <div class="btn"><i class="fa-solid fa-forward"></i></div>
+                <div class="btn shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+
+            <div class="playlist"></div>
+        </div>
+        <script src="./music.js"></script>
+    </body>
+</html>
